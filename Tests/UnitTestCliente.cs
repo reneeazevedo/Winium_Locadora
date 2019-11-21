@@ -1,7 +1,5 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Winium;
-using Winium.Elements.Desktop.Extensions;
 using Winium.Pages;
 using Winium.Utils;
 
@@ -25,9 +23,9 @@ namespace Winium
             MenuPrincipalPage menupage = new MenuPrincipalPage(driver);
             ClientePage clientepage = new ClientePage(driver);
             EditorClientePage editorClientePage = new EditorClientePage(driver);
-           
+            //Steps
             menupage.ClicarMenuCliente();
-            /*clientepage.ClicarBotaoNovoCliente();
+            clientepage.ClicarBotaoNovoCliente();
             editorClientePage.DigitarCNH();
             editorClientePage.SelecionarUF();
             editorClientePage.DigitarNomeCompleto();
@@ -35,7 +33,7 @@ namespace Winium
             editorClientePage.DigitarCEP();
             editorClientePage.DigitarCidade();
             editorClientePage.ClicarBotaoOK();
-            */
+            //Validações
             clientepage.ValidarValores();
             
         }

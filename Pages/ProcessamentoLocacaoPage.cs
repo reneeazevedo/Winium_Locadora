@@ -2,8 +2,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Winium;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using Winium.Elements.Desktop.Extensions;
 
 namespace Winium.Pages
@@ -134,8 +132,7 @@ namespace Winium.Pages
             _driver.FindElementById("btnCalculate").Click();
             var taxaCalculada = _driver.FindElement(By.Id("txtOrderTotal")).Text;
             
-            
-            Assert.AreEqual(1022,44, taxaCalculada);
+            Assert.AreEqual("1022,44", taxaCalculada);
             
             
         }
@@ -143,7 +140,7 @@ namespace Winium.Pages
 
 
 
-
+    //Interação com elemento date_time_picker
     /*var date_time_picker = driver.FindElementById("dtpStartDate");
     driver.ExecuteScript("automation: ValuePattern.SetValue", date_time_picker, "24/10/2019 00:00:00");*/
 

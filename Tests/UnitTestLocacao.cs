@@ -21,14 +21,13 @@ namespace Winium
 
         [Test]
         public void Locacao()
-        {
-            
+        { 
 
             ProcessamentoLocacaoPage locacaopage = new ProcessamentoLocacaoPage(driver);
             MenuPrincipalPage menu = new MenuPrincipalPage(driver);
             
             menu.ClicarBotaoLocacao();
-            /*locacaopage.DigitarNumero();
+            locacaopage.DigitarNumero();
             locacaopage.DigitarNomeEmpregado();
             locacaopage.DigitarCNH();
             locacaopage.DigitarNomeCliente();
@@ -43,19 +42,12 @@ namespace Winium
             locacaopage.SelecionarConservacaoCarro();
             locacaopage.DigitarModeloCarro();
             locacaopage.SelecionarStatusTanque();
-            locacaopage.DigitarKmFinal();*/
+            locacaopage.DigitarKmFinal();
             locacaopage.DigitarDataInicLoc();
             locacaopage.DigitarDataFimLoc();
             locacaopage.SelecionarStatusPedido();
             locacaopage.DigitarTaxaAplicada();
             locacaopage.ClicarBotaoCalcular();
-            
-
-
-
-
-            
-           
         }
 
         [TearDown]

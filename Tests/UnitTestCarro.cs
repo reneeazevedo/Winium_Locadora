@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using NUnit.Framework;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Winium;
-using Winium.Elements.Desktop.Extensions;
 using Winium.Pages;
 using Winium.Utils;
 

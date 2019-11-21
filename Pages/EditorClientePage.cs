@@ -1,7 +1,4 @@
 ﻿using OpenQA.Selenium.Winium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Winium.Elements.Desktop.Extensions;
 
 namespace Winium.Pages

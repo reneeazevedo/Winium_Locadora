@@ -19,9 +19,15 @@ namespace Winium.Utils
         }
         public void FecharDriver()
         {
-            Process[] processes = Process.GetProcessesByName("Winium.Desktop.Driver");
+            Process[] appwiniumdriver = Process.GetProcessesByName("Winium.Desktop.Driver");
 
-            foreach (Process process in processes)
+            foreach (Process process in appwiniumdriver)
+            {
+                process.Kill();
+            }
+            Process[] applocadora = Process.GetProcessesByName("BethesdaCarRental1");
+
+            foreach (Process process in applocadora)
             {
                 process.Kill();
             }
